@@ -35,11 +35,12 @@ const Footer = () => {
                     ></a>
                     <a
                         className="btn btn-link btn-floating btn-lg text-dark m-1"
-                        href="#!"
+                        href="https://github.dev/sjkeskar/react-website"
                         role="button"
                         data-mdb-ripple-color="dark"
+                        target={'_blank'}
                     ><i className="fab fa-github"></i
-                    >https://github.dev/sjkeskar/react-website</a>
+                    ></a>
                 </section>
             </div>
             <div className="text-center text-dark p-3">
