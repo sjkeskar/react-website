@@ -39,7 +39,7 @@ const Footer = () => {
                         role="button"
                         data-mdb-ripple-color="dark"
                     ><i className="fab fa-github"></i
-                    ></a>
+                    >https://github.dev/sjkeskar/react-website</a>
                 </section>
             </div>
             <div className="text-center text-dark p-3">
