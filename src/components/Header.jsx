@@ -6,7 +6,7 @@ const Header = () => {
         <header className='pb-2'>
             <Navbar className='py-3'>
                 <Container fluid>
-                    <Navbar.Brand>EverythingBeach</Navbar.Brand>
+                    <Navbar.Brand href='/'> <img src="./logo.jpg" alt="Logo" width={80} /> EverythingBeach</Navbar.Brand>
                     <Nav className='justify-content-center'>
                         <Nav.Link href='/'>Home</Nav.Link>
                         <Nav.Link href='/activities'>Activities</Nav.Link>
@@ -23,7 +23,7 @@ const Header = () => {
                                 Bookings
                             </NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item href='/signout'>
+                            <NavDropdown.Item href='/'>
                                 Sign Out
                             </NavDropdown.Item>
                         </NavDropdown>

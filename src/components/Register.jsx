@@ -6,6 +6,7 @@ const Register = () => {
     const [email, setEmail] = useState('')
     const [name, setName] = useState('')
     const [password, setPassword] = useState('')
+    const [gender, setGender] = useState('')
     return (
         <FormContainer>
             <h1>Register</h1>
@@ -36,6 +37,27 @@ const Register = () => {
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
                     ></Form.Control>
+                </Form.Group>
+                <Form.Group controlId='gender' className='py-3'>
+                    <Form.Label>Gender</Form.Label> <br />
+                    <Form.Check
+                        inline
+                        label="Male"
+                        name="gender"
+                        type="radio"
+                        id='inline-radio-1'
+                        value="male"
+                        onChange={(e) => setGender(e.target.value)}
+                    />
+                    <Form.Check
+                        inline
+                        label="Female"
+                        name="gender"
+                        type="radio"
+                        id='inline-radio-2'
+                        value="female"
+                        onChange={(e) => setGender(e.target.value)}
+                    />
                 </Form.Group>
                 <Form.Group className='py-3 text-center'>
                     <Button variant='outline-dark' size='md' type='submit' className='px-5 py-2 m-2' style={{ fontSize: '18px' }}>Register</Button>

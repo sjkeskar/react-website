@@ -4,15 +4,16 @@ import { Card, Button } from 'react-bootstrap';
 const ActivityCard = ({ Activity }) => {
     return (
         <div>
-            <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={Activity.img} width={200} height={200} />
+            <Card style={{ width: '18rem', minHeight: '24rem' }}>
+                <Card.Img variant="top" src={Activity.img}/>
                 <Card.Body>
                     <Card.Title>{Activity.title}</Card.Title>
                     <Card.Text>
                         {Activity.description}
                     </Card.Text>
+                    <div className="p-2"></div>
                     <div className="d-grid p-1">
-                        <Button type='button' className='btn btn-danger btn-block'>Book now</Button>
+                        <Button type='button' className='btn btn-danger btn-block' href={`/activity/${Activity.link}`}>Book now</Button>
                     </div>
                 </Card.Body>
             </Card>

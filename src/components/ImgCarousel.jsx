@@ -6,32 +6,38 @@ const ImgCarousel = () => {
         "title": "Surfing",
         "img": "watersurfing.jpg",
         "description": "Surf the waves and rule them.",
-        "color": "#F4F3EE"
+        "color": "white",
+        "link": "surfing"
     }, {
         "title": "Scuba Diving",
         "img": "scubadiving.jpg",
         "description": "Dive the deep ocean and enjoy the miracles of the ocean.",
-        "color": "#F4F3EE"
+        "color": "#F4F3EE",
+        "link": "scubadiving"
     }, {
         "title": "Banana Riding",
         "img": "bananaride.jpg",
         "description": "Ride the banana shaped ride and have fun with you family and friends!.",
-        "color": "#F4F3EE"
+        "color": "#F4F3EE",
+        "link": "bananariding"
     }, {
         "title": "Snorkelling",
         "img": "snorkelling.jpg",
         "description": "Dive in the ocean and don't worry about the oxygen tanks, just relax.",
-        "color": "#F4F3EE"
+        "color": "white",
+        "link": "snorkelling"
     }, {
         "title": "Jet skiing",
         "img": "jetski.jpg",
         "description": "Experience the scooter that travels on water, it's mighty fast and adventorous.",
-        "color": "white"
+        "color": "black",
+        "link": "jetskiing"
     }, {
         "title": "Flyboarding",
-        "img": "flyboard.jpg",
+        "img": "flyboard1.jpg",
         "description": "fly using the power of water, over water.",
-        "color": "black"
+        "color": "black",
+        "link": "flyboarding"
     }]
     return (
         <div>
@@ -50,7 +56,7 @@ const ImgCarousel = () => {
                             <h5 style={{ 'color': `${act.color}` }}>{act.title}</h5>
                             <p style={{ 'color': `${act.color}` }}>{act.description}</p>
                             <div className="d-grid p-1">
-                                <Button type='button' className='btn btn-danger btn-block'>Book now</Button>
+                                <Button type='button' className='btn btn-danger btn-block' href={`/activity/${act.link}`}>Book now</Button>
                             </div>
                         </Carousel.Caption>
                     </Carousel.Item>

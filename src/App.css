@@ -1,5 +1,9 @@
-.App{
+.App {
     text-align: center;
+}
+
+.ContactForm {
+    background-image: url('../public/contact.jpg');
 }
 
 /* .footer{
