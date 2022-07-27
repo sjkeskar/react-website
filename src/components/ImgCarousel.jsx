@@ -34,7 +34,7 @@ const ImgCarousel = () => {
         "link": "jetskiing"
     }, {
         "title": "Flyboarding",
-        "img": "flyboard1.jpg",
+        "img": "flyboard.jpg",
         "description": "fly using the power of water, over water.",
         "color": "black",
         "link": "flyboarding"
