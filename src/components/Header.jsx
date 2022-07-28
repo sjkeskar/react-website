@@ -3,10 +3,10 @@ import { Container, Navbar, Nav, NavDropdown } from 'react-bootstrap'
 
 const Header = () => {
     return (
-        <header className='pb-2'>
+        <header className='pb-3'>
             <Navbar className='py-3'>
                 <Container fluid>
-                    <Navbar.Brand href='/'> <img src="./logo.jpg" alt="Logo" width={80} /> EverythingBeach</Navbar.Brand>
+                    <Navbar.Brand href='/'> <img src="  /logo.jpg" alt="Logo" width={50} /> EverythingBeach</Navbar.Brand>
                     <Nav className='justify-content-center'>
                         <Nav.Link href='/'>Home</Nav.Link>
                         <Nav.Link href='/activities'>Activities</Nav.Link>

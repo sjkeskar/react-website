@@ -7,30 +7,38 @@ const Footer = () => {
                 <section className="mb-4">
                     <a
                         className="btn btn-link btn-floating btn-lg text-dark m-1"
-                        href="#!"
+                        href="https://www.facebook.com/react/"
                         role="button"
                         data-mdb-ripple-color="dark"
+                        target={'_blank'}
+                        rel="noopener noreferrer"
                     ><i className="fab fa-facebook-f"></i
                     ></a>
                     <a
                         className="btn btn-link btn-floating btn-lg text-dark m-1"
-                        href="#!"
+                        href="https://twitter.com/reactjs"
                         role="button"
                         data-mdb-ripple-color="dark"
+                        target={'_blank'}
+                        rel="noopener noreferrer"
                     ><i className="fab fa-twitter"></i
                     ></a>
                     <a
                         className="btn btn-link btn-floating btn-lg text-dark m-1"
-                        href="#!"
+                        href="https://www.google.com/search?q=react"
                         role="button"
                         data-mdb-ripple-color="dark"
+                        target={'_blank'}
+                        rel="noopener noreferrer"
                     ><i className="fab fa-google"></i
                     ></a>
                     <a
                         className="btn btn-link btn-floating btn-lg text-dark m-1"
-                        href="#!"
+                        href="https://www.instagram.com/reactjsofficial"
                         role="button"
                         data-mdb-ripple-color="dark"
+                        target={'_blank'}
+                        rel="noopener noreferrer"
                     ><i className="fab fa-instagram"></i
                     ></a>
                     <a
@@ -39,6 +47,7 @@ const Footer = () => {
                         role="button"
                         data-mdb-ripple-color="dark"
                         target={'_blank'}
+                        rel="noopener noreferrer"
                     ><i className="fab fa-github"></i
                     ></a>
                 </section>

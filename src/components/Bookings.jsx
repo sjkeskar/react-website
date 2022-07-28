@@ -49,7 +49,7 @@ const Bookings = () => {
                     {
                         data.map((element, index) => (
                             <tr>
-                                <td>{index}</td>
+                                <td>{index+1}</td>
                                 <td>{element.activity}</td>
                                 <td>{element.location}</td>
                                 <td>{element.date}</td>

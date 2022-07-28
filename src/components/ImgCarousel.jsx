@@ -1,5 +1,6 @@
 import React from 'react'
 import { Carousel, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const ImgCarousel = () => {
     const imgData = [{
@@ -10,7 +11,7 @@ const ImgCarousel = () => {
         "link": "surfing"
     }, {
         "title": "Scuba Diving",
-        "img": "scubadiving.jpg",
+        "img": "scubadiving1.jpg",
         "description": "Dive the deep ocean and enjoy the miracles of the ocean.",
         "color": "#F4F3EE",
         "link": "scubadiving"
@@ -22,7 +23,7 @@ const ImgCarousel = () => {
         "link": "bananariding"
     }, {
         "title": "Snorkelling",
-        "img": "snorkelling.jpg",
+        "img": "snorkelling.webp",
         "description": "Dive in the ocean and don't worry about the oxygen tanks, just relax.",
         "color": "white",
         "link": "snorkelling"
@@ -55,9 +56,13 @@ const ImgCarousel = () => {
                         <Carousel.Caption>
                             <h5 style={{ 'color': `${act.color}` }}>{act.title}</h5>
                             <p style={{ 'color': `${act.color}` }}>{act.description}</p>
-                            <div className="d-grid p-1">
-                                <Button type='button' className='btn btn-danger btn-block' href={`/activity/${act.link}`}>Book now</Button>
-                            </div>
+                            <Link to={`/activity/${act.link}`}>
+                                <div className="d-grid p-1">
+                                    <Button type='button' className='btn btn-danger btn-block'>
+                                        Book now
+                                    </Button>
+                                </div>
+                            </Link>
                         </Carousel.Caption>
                     </Carousel.Item>
                 ))}

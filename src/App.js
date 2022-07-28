@@ -12,6 +12,7 @@ import Register from './components/Register';
 import Profile from './components/Profile';
 import Bookings from './components/Bookings';
 import ActivityScreen from './Screens/ActivityScreen';
+import ActivityDetail from './components/ActivityDetail';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path='/register' element={<Register />} />
           <Route path='/myprofile' element={<Profile />} />
           <Route path='/mybooking' element={<Bookings />} />
+          <Route path='/activity/:id' element={ <ActivityScreen /> } />
         </Routes>
       </Container>
       <Footer />

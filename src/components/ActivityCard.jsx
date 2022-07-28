@@ -1,20 +1,23 @@
 import React from 'react'
 import { Card, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const ActivityCard = ({ Activity }) => {
     return (
         <div>
             <Card style={{ width: '18rem', minHeight: '24rem' }}>
-                <Card.Img variant="top" src={Activity.img}/>
+                <Card.Img variant="top" src={Activity.img} height={'180rem'} />
                 <Card.Body>
                     <Card.Title>{Activity.title}</Card.Title>
                     <Card.Text>
                         {Activity.description}
                     </Card.Text>
                     <div className="p-2"></div>
-                    <div className="d-grid p-1">
-                        <Button type='button' className='btn btn-danger btn-block' href={`/activity/${Activity.link}`}>Book now</Button>
-                    </div>
+                    <Link to={`/activity/${Activity.link}`}>
+                        <div className="d-grid p-1">
+                            <Button type='button' className='btn btn-danger btn-block'>Book now</Button>
+                        </div>
+                    </Link>
                 </Card.Body>
             </Card>
         </div>

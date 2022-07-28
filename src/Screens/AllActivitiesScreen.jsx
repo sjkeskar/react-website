@@ -1,11 +1,11 @@
-import React, { useState } from 'react'
+import React from 'react'
 import ActivityCard from '../components/ActivityCard'
 import { Row, Col } from 'react-bootstrap'
 
 const AllActivitiesScreen = () => {
     const activitiesList = [{
         "title": "Surfing",
-        "img": "watersurfing.jpg",
+        "img": "watersurfing1.jpg",
         "description": "Use a Water Board to Surf the waves and rule them.",
         "link": "surfing"
     }, {
@@ -16,21 +16,21 @@ const AllActivitiesScreen = () => {
     }, {
         "title": "Banana Riding",
         "img": "bananaride.jpg",
-        "description": "Ride the banana shaped ride and have fun with you family and friends!.",
+        "description": "Ride the banana shaped ride and have fun with you friends!.",
         "link": "bananariding"
     }, {
         "title": "Snorkelling",
-        "img": "snorkelling.jpg",
+        "img": "snorkelling1.jpg",
         "description": "Dive in the ocean and don't worry about the oxygen tanks, just relax.",
         "link": "snorkelling"
     }, {
         "title": "Jet skiing",
-        "img": "jetski.jpg",
+        "img": "jetski2.jpg",
         "description": "Experience the scooter that travels on water, it's really adventorous.",
         "link": "jetskiing"
     }, {
         "title": "Flyboarding",
-        "img": "flyboard.jpg",
+        "img": "flyboard3.jpg",
         "description": "A Water sport that lets you fly using the power of water, over water.",
         "link": "flyboarding"
     }]
