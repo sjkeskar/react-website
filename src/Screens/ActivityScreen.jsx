@@ -77,6 +77,7 @@ const ActivityScreen = () => {
                         </Row>
                         <Row>
                             <h3>Time Slot</h3>
+                            <sub>Slots can be booked for the current day only.</sub>
                             <FormContainer>
                                 <Form>
                                     <Form.Group controlId='timeSlot' className='py-1'>
