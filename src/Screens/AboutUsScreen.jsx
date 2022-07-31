@@ -1,13 +1,14 @@
 import React from 'react'
+import { Container } from 'react-bootstrap'
 
 const AboutUsScreen = () => {
   return (
-    <div className='text-center'  >
+    <Container className='text-center'  >
       <h2>About Us</h2>
-      <div className="text-center">
-        <img src="aboutus.jpg" alt="Aboutus" width={500} />
+      <div className="text-center py-3">
+        <img src="aboutusheader.jpg" alt="Aboutus" height={400} className="rounded"/>
       </div>
-      <p>From making it easy for people to use the service
+      <p>Young Seaside Dwellers obsessed with making it easy for people to use the service
         to helping water sports provider increase their reach,
         online and offline. We have grown together with our partners.</p>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -20,7 +21,7 @@ const AboutUsScreen = () => {
         Ultrices vitae auctor eu augue. Ornare quam viverra orci sagittis.
         Nullam non nisi est sit amet facilisis. Quis eleifend quam adipiscing vitae proin.
         Viverra orci sagittis eu volutpat odio facilisis mauris sit amet.</p>
-    </div>
+    </Container>
   )
 }
 

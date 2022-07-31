@@ -6,6 +6,18 @@
     background-image: url('../public/contact.jpg');
 }
 
+.removea{
+    text-decoration: none;
+}
+
+.textincenter {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+}
+
 /* .footer{
     position: fixed;
     bottom: 0;

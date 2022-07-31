@@ -1,6 +1,6 @@
 import React from 'react'
 import ActivityCard from '../components/ActivityCard'
-import { Row, Col } from 'react-bootstrap'
+import { Row, Col, Container } from 'react-bootstrap'
 
 const AllActivitiesScreen = () => {
     const activitiesList = [{
@@ -15,7 +15,7 @@ const AllActivitiesScreen = () => {
         "link": "scubadiving"
     }, {
         "title": "Banana Riding",
-        "img": "bananaride.jpg",
+        "img": "/bananarideactivity.jpg",
         "description": "Ride the banana shaped ride and have fun with you friends!.",
         "link": "bananariding"
     }, {
@@ -35,7 +35,7 @@ const AllActivitiesScreen = () => {
         "link": "flyboarding"
     }]
     return (
-        <div>
+        <Container>
             <Row>
                 {activitiesList.map((activity, index) => (
                     <Col xl={3} md={4} lg={4} sm={2} key={index} className='p-2'>
@@ -43,7 +43,7 @@ const AllActivitiesScreen = () => {
                     </Col>
                 ))}
             </Row>
-        </div>
+        </Container>
     )
 }
 

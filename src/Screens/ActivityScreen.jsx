@@ -24,7 +24,7 @@ const ActivityScreen = () => {
         "link": "scubadiving"
     }, {
         "title": "Banana Riding",
-        "img": "/bananaride.jpg",
+        "img": "/bananaactivity.jpg",
         "description": "Ride the banana shaped ride and have fun with you family and friends!.",
         "slots": [{ "time": "08:00", "full": false }, { "time": "10:00", "full": true }, { "time": "12:00", "full": false }, { "time": "14:00", "full": false }],
         "link": "bananariding"
@@ -36,13 +36,13 @@ const ActivityScreen = () => {
         "link": "snorkelling"
     }, {
         "title": "Jet skiing",
-        "img": "/jetski3.jpg",
+        "img": "/jetski.jpg",
         "description": "Experience the scooter that travels on water, it's really adventorous.",
         "slots": [{ "time": "10:00", "full": false }, { "time": "10:20", "full": true }, { "time": "10:40", "full": false }, { "time": "11:00", "full": false }, { "time": "11:00", "full": false }, { "time": "11:20", "full": false }, { "time": "11:40", "full": false }, { "time": "12:00", "full": false }],
         "link": "jetskiing"
     }, {
         "title": "Flyboarding",
-        "img": "/flyboard.webp",
+        "img": "/flyboarding.jpg",
         "description": "A Water sport that lets you fly using the power of water, over water.",
         "slots": [{ "time": "08:00", "full": false }, { "time": "10:00", "full": true }, { "time": "12:00", "full": false }, { "time": "14:00", "full": false }],
         "link": "flyboarding"
@@ -68,8 +68,9 @@ const ActivityScreen = () => {
                         <Row>
                             <Col className='col-5'>
                                 <h2 className='py-2 my-1'>{act.title}</h2>
+                                <p>{act.description}</p><br /><br /><br />
                                 <h2 className='py-2 my-1'>Location</h2>
-                                <p>{act.description}</p>
+                                
                             </Col>
                             <Col className='col-7'>
                                 <img src={act.img} alt={act.title} width={700} height={400} className="rounded" />
@@ -88,7 +89,7 @@ const ActivityScreen = () => {
                                         }
                                     </Form.Group>
                                     <div className="text-center py-3">
-                                        <Button variant='outline-danger' size='md' onClick={() => { setShow(true) }} className='px-5 py-2 m-2' style={{ fontSize: '18px' }} disabled={timeSelect === "" ? true : false}>Register</Button>
+                                        <Button variant='outline-dark' size='md' onClick={() => { setShow(true) }} className='px-5 py-2 m-2' style={{ fontSize: '18px' }} disabled={timeSelect === "" ? true : false}>Register</Button>
                                     </div>
                                 </Form>
                             </FormContainer>

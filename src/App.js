@@ -12,15 +12,14 @@ import Register from './components/Register';
 import Profile from './components/Profile';
 import Bookings from './components/Bookings';
 import ActivityScreen from './Screens/ActivityScreen';
-import ActivityDetail from './components/ActivityDetail';
 
 function App() {
   return (
     <BrowserRouter>
       <Header />
-      <Container style={{ minHeight: '600px' }}>
-        <Routes>
-          <Route path='/' element={<ImgCarousel />} />
+      <Container>
+      <Routes>
+        <Route path='/' element={<ImgCarousel />} />
           <Route path='/Contactus' element={<ContactForm />} />
           <Route path='/activities' element={<AllActivitiesScreen />} />
           <Route path='/aboutus' element={<AboutUsScreen />} />
@@ -28,11 +27,11 @@ function App() {
           <Route path='/register' element={<Register />} />
           <Route path='/myprofile' element={<Profile />} />
           <Route path='/mybooking' element={<Bookings />} />
-          <Route path='/activity/:id' element={ <ActivityScreen /> } />
-        </Routes>
+          <Route path='/activity/:id' element={<ActivityScreen />} />
+      </Routes>
       </Container>
       <Footer />
-    </BrowserRouter>
+    </BrowserRouter >
   );
 }
 

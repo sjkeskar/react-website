@@ -13,9 +13,9 @@ const ActivityCard = ({ Activity }) => {
                         {Activity.description}
                     </Card.Text>
                     <div className="p-2"></div>
-                    <Link to={`/activity/${Activity.link}`}>
+                    <Link to={`/activity/${Activity.link}`} className="removea">
                         <div className="d-grid p-1">
-                            <Button type='button' className='btn btn-danger btn-block'>Book now</Button>
+                            <Button type='button' className='btn btn-dark'>Book now</Button>
                         </div>
                     </Link>
                 </Card.Body>

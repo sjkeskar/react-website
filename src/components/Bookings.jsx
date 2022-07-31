@@ -1,5 +1,5 @@
 import React from 'react'
-import { Table } from 'react-bootstrap'
+import { Container, Table } from 'react-bootstrap'
 
 const Bookings = () => {
     const data = [{
@@ -32,33 +32,35 @@ const Bookings = () => {
         "date": "30-06-2020"
     }]
     return (
-        <div>
-            <div className='py-3'>
-                <h2>My Bookings</h2>
+        <Container>
+            <div>
+                <div className='py-3'>
+                    <h2>My Bookings</h2>
+                </div>
+                <Table borderless>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Activity</th>
+                            <th>Location</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {
+                            data.map((element, index) => (
+                                <tr>
+                                    <td>{index + 1}</td>
+                                    <td>{element.activity}</td>
+                                    <td>{element.location}</td>
+                                    <td>{element.date}</td>
+                                </tr>
+                            ))
+                        }
+                    </tbody>
+                </Table>
             </div>
-            <Table striped bordered hover>
-                <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>Activity</th>
-                        <th>Location</th>
-                        <th>Date</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {
-                        data.map((element, index) => (
-                            <tr>
-                                <td>{index+1}</td>
-                                <td>{element.activity}</td>
-                                <td>{element.location}</td>
-                                <td>{element.date}</td>
-                            </tr>
-                        ))
-                    }
-                </tbody>
-            </Table>
-        </div>
+        </Container>
     )
 }
 
