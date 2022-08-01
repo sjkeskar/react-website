@@ -51,9 +51,7 @@ const Footer = () => {
                     ><i className="fab fa-github"></i
                     ></a>
                 </section>
-            </div>
-            <div className="text-center text-dark p-3">
-                Created By Siddhant Keskar
+                <p className="text-center text-dark py-2">Created By Siddhant Keskar</p>
             </div>
         </footer>
     )
